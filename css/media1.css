@@ -5,135 +5,92 @@
     /* --main-bg-color: #EE809E;  피그마의 스타일가이드 속성 넣어서 사용가능 var() */
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1800px) {
+    .best {
+        height: auto;
+    }
 
-    /* header */
-    header {
+    .best .title {
         width: 100%;
         height: auto;
-        padding: 20px;
-    }
-
-    header nav {
-        width: 50%;
-        font-size: 1.5rem;
-    }
-
-    header nav ul li a {
-        font-size: 1.3rem;
-    }
-
-    header .login {
-        width: 10%;
+        margin: 0 auto;
+        background: #000;
+        color: #fff;
+        transform: rotate(0);
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100px;
     }
 
-    header .login ul li:first-child {
+    .best .title .line {
         display: none;
     }
 
+    .review .navigation {
+        width: 80%;
+    }
+
+    footer>p {
+        font-size: clamp(2rem, 5vw, 50rem);
+    }
+
+}
+
+
+@media screen and (max-width: 1024px) {
 
     /* banner */
-    .banner {
-        width: 100%;
-        height: auto;
+    .banner h2 {
+        font-size: 15rem;
     }
 
-    .banner ul.slide li {
-        background-size: 75% auto;
+    .banner .left ul li p.shadow {
+        font-size: 15rem;
     }
 
-    .banner ul.slide li .tag1,
-    .tag2,
-    .tag3 {
-        width: 80%;
-        font-size: 2.0rem;
+    .banner .left ul li .txt_box>p {
+        font-size: 2.7rem;
     }
 
-    .banner ul.slide li {
-        height: 500px;
+    .banner .left ul li .txt_box .sub_txt_box h3 {
+        font-size: 1.7rem;
     }
 
-    .banner .bg_box {
-        left: 527px;
-        top: 40px;
-        width: 40%;
-        height: 250px;
-        padding: 25px;
-        position: relative;
+    .banner .left ul li .txt_box .sub_txt_box .txt {
+        display: none;
     }
 
-    .banner .bg_box h2 {
-        width: 100%;
+    .banner .right ul li .txt_box {
+        width: 90%;
+        height: 130px;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .banner .right ul li .txt_box div p.title {
         font-size: 2rem;
     }
 
-    .banner .bg_box .txt_box {
-        margin-top: 10px;
+    .banner .right ul li .txt_box div p {
+        font-size: 1.4rem;
     }
 
-    .banner .bg_box .txt_box p {
-        font-size: 1.2rem;
-        height: 80%;
-    }
-
-    .banner .bg_box .txt_box .more {
-        width: 35%;
-        margin-top: 10px;
-    }
-
-    .banner .bg_box .txt_box .more a {
-        font-size: 1rem;
-    }
-
-    .banner .bg_box .sub_img_box {
-        position: absolute;
-        width: 170px;
-        height: 170px;
-        left: 310px;
-        top: 170px;
-    }
-
-    .banner li.b_slide3 .bg_box .sub_img_box {
-        top: 120px;
-    }
-
-    .banner .bg_box .sub_img_box img {
+    .banner header {
         width: 100%;
+        height: 100px;
+        padding: 20px;
+        margin-top: 0;
     }
 
-    .next_img {
-        display: none;
+    .banner header nav {
+        width: 70%;
+        font-size: 1.7rem;
     }
 
-    .banner_bottom {
-        width: 100%;
-        height: 0;
+    .best::before {
+        font-size: 30rem;
     }
-
-    .banner_bottom::before {
-        font-size: 20rem;
-        width: 100%;
-        height: 200px;
-    }
-
-    .banner_bottom .arrow {
-        left: 650px;
-        top: 570px;
-        width: 300px;
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        transform: translateY(-50%);
-        z-index: 10;
-    }
-
-    .banner_bottom .arrow img {
-        cursor: pointer;
-    }
-
 
     /* best */
     .best {
@@ -175,15 +132,15 @@
     .best article .bg_box .img_box {
         width: 800px;
         height: 430px;
-        background: #D7705B;
-        border-radius: 0 300px 300px 0;
+        background: #252525;
+        border-radius: 0 400px 400px 0;
         display: flex;
         align-items: center;
     }
 
     .best article .bg_box .img_box img {
-        width: 770px;
-        height: 350px;
+        width: 95%;
+        height: 85%;
         line-height: 350px;
     }
 
@@ -196,6 +153,14 @@
         padding: 30px 0;
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
+    }
+    .best article .txt_box h4{
+        font-size: 3.5rem;
+    }
+    .best article .txt_box p {
+        text-align: left;
+        font-size: 2.5rem;
     }
 
     .best article.best_class2 {
@@ -216,7 +181,7 @@
     .best article.best_class2 .bg_box .img_box {
         width: 800px;
         height: 430px;
-        background: #D7705B;
+        background: #DA6D00;
         border-radius: 300px 0 0 300px;
         display: flex;
         align-items: center;
